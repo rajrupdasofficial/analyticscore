@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-concurrency-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@faker-js/faker": "9.9.0",
+    "@prisma/client": "6.19.0",
+    "dotenv": "16.6.1",
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10",
+    "prisma": "6.19.0"
+  }
+}
